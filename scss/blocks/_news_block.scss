@@ -1,0 +1,19 @@
+.news {
+    height: 978px;
+    background: url("../image/city_news.png"), linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media screen and (max-width:$desktop-small){
+        height: 900px;
+    }
+    @media screen and (max-width:$mobile){
+        height: 800px;
+    }
+
+    &__title {
+        color: $white-color;
+        text-align: center;
+        margin-top: 30px;
+    }
+}

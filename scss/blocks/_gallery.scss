@@ -1,0 +1,72 @@
+.gallery__title {
+    text-align: center;
+    margin: 100px 0 90px 0;
+
+    @media screen and (max-width:$desktop-small){
+        margin: 30px 0 50px 0;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+
+    @media screen and (max-width:$desktop-small){
+        grid-template-columns: repeat(2, 1fr);
+        width: 575px;
+    }
+    @media screen and (max-width:$mobile){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width:$mobile){
+        width: 300px;
+    }
+    
+        &__image-first {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            @media screen and (max-width:$desktop-small){
+                grid-template-columns: repeat(2, 1fr);
+        
+            }
+            @media screen and (max-width:$mobile){
+                width: 285px;
+                height: 214px;
+            }
+            
+        &-photo {
+            @media screen and (max-width:$mobile){
+                width: 285px;
+                height: 214px;
+                display: flex;
+            }
+        }
+
+            &::before {
+                content: "";
+                background-image: url("../image/bi_zoom-in.png");
+                width: 70px;
+                height: 70px;
+                display: block;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 187px;
+                left: 257px;
+            
+                @media screen and (max-width:$mobile){
+                    top: 82px;
+                    left: 120px;
+                }
+            }
+        }
+
+}

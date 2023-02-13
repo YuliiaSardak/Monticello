@@ -1,0 +1,13 @@
+.header__social-block {
+    display: flex;
+    gap: 20px;
+
+    @media screen and (max-width:$desktop-small){
+        gap: 10px;
+
+    }
+    @media screen and (max-width:$mobile){
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

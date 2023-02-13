@@ -1,0 +1,14 @@
+@import "./reset";
+@import "./variables";
+@import "./fonts";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: $main-font;
+    color: $main-color;
+}

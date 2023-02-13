@@ -1,0 +1,107 @@
+.header__slider {
+    &-slide {
+        height: 800px;
+        color: $white-color;
+       
+        @media screen and (max-width:$tablet){
+            height: 600px;
+        }
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 98px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        padding-top: 330px;
+
+        @media screen and (max-width:$desktop-small){
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 70px;
+        }
+
+        @media screen and (max-width:$tablet){
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 50px;
+            padding-top: 280px;
+        }
+        @media screen and (max-width:$mobile){
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    &-pretitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.3em;
+        text-align: center;
+        margin-top: 20px;
+
+        @media screen and (max-width:$mobile){
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
+.simple {
+    background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+}
+.fast {
+    background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #ffdb5a 16.9%, #55ffcf 83.27%);
+}
+.profitable {
+    background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #b34628 16.9%, #55ffa1 83.27%);
+}
+.good {
+    background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #b3a728 16.9%, #ff55b8 83.27%);
+}
+.modern {
+    background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #161615 16.9%, #f4e8ef 83.27%);
+}
+
+.slick-dots {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    position: relative;
+    transform: rotate(90deg);
+    left: 747px;
+    top: -407px;
+
+    @media screen and (max-width:$desktop){
+        left: 605px;
+    }
+    @media screen and (max-width:$desktop-small){
+        left: 463px;
+
+    }
+    @media screen and (max-width:$tablet){
+        transform: none;
+        top: -45px;
+        left: 0;
+    }
+}
+.slick-dots button {
+    font-size: 0;
+    border: 1px solid $white-color;
+    border-radius: 50%;
+    height: 12px;
+    width: 10px;
+    background: padding-box;
+
+    @media screen and (max-width:$mobile){
+        height: 10px;
+        width: 10px;
+    } 
+}
+.slider .slick-dots li.slick-active button {
+    background-color: $white-color;
+}
+

@@ -1,0 +1,56 @@
+.slider__button-scroll {
+    text-align: center;
+    margin-top: 240px;
+    cursor: pointer;
+
+    @media screen and (max-width:$tablet){
+        margin-top: 90px;
+    }
+}
+.projects__block-text-button {
+    margin-top: 40px;
+
+    @media screen and (max-width:$tablet){
+        margin-top: 60px;
+    }
+}
+.btn {
+    text-decoration: none;
+    color: $buttons-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 16px 41px;
+    border: 1px solid $main-color;
+
+    @media screen and (max-width:$tablet){
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 25px 50px;
+    }
+    @media screen and (max-width:$mobile){
+        padding: 18px 36px;
+    }
+}
+.projects__block-button {
+
+    &:hover {
+        background-color: $hover-color-blue;
+    }
+}
+.btn-trade {
+    &:hover {
+        background-color: $hover-color-purple;
+    }
+}
+.gallery__button {
+    margin-top: 75px;
+    text-align: center;
+    
+    &-more {
+        &:hover {
+            background-color: $hover-color-purple
+        }
+    }
+}

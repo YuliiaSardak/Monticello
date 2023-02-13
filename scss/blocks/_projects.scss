@@ -1,0 +1,217 @@
+.title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+
+    @media screen and (max-width:$desktop-small){
+        font-size: 38px;
+        line-height: 40px;
+
+    }
+    @media screen and (max-width:$tablet){
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    @media screen and (max-width:$mobile){
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+.main__title {
+    text-align: center;
+    margin: 30px 0 90px 0;
+
+    @media screen and (max-width:$desktop-small){
+        margin: 30px 0 0 0;
+    }
+}
+.projects {
+    margin-bottom: 150px;
+
+    @media screen and (max-width:$tablet){
+        margin-bottom: 50px;
+    }
+
+&__block {
+    display: flex;
+    height: 527px;
+    gap: 64px;
+
+    @media screen and (max-width:$desktop){
+        gap: 50px;
+    }
+    @media screen and (max-width:$tablet){
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        height: auto;
+    } 
+        &-geo {
+            font-family: $nav-font;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: $buttons-color;   
+        }
+
+        &-images {
+            width: 820px;
+            
+            @media screen and (max-width:$desktop){
+                width: 740px;
+            }
+            @media screen and (max-width:$mobile){
+                width: 300px;
+            }
+            
+            &-image {
+                position: relative;
+                top: -413px;
+                right: -213px;
+
+            @media screen and (max-width:$desktop){
+                right: -85px;
+            }
+
+            @media screen and (max-width:$desktop-small){
+                right: 0;
+                top: 86px;
+            }
+            @media screen and (max-width:$tablet){
+                width: 700px;
+                left: 17px;
+            }
+
+            @media screen and (max-width:$mobile){
+                width: 250px;
+            }
+                
+            &-commerce {
+                position: relative;
+                top: 58px;
+                left: -25px;
+
+                @media screen and (max-width:$desktop-small){
+                    left: 10px;
+                    width: 670px;
+                }
+                @media screen and (max-width:$tablet){
+                    width: 700px;
+                }
+                @media screen and (max-width:$mobile){
+                    width: 250px;
+                }
+            }
+        }   
+            &-rectangle {
+                @media screen and (max-width:$desktop-small){
+                    display: none;
+                }
+            }
+        }
+        &-text {
+            width: 488px;
+            margin-left: 29px;
+            margin-top: 162px;
+
+            @media screen and (max-width:$desktop){
+                width: 468px;
+                margin-top: 100px;
+        
+            }
+            @media screen and (max-width:$desktop-small){
+                width: 260px;
+                margin-left: -100px;
+            }
+            @media screen and (max-width:$tablet){
+                margin: 0 auto;
+                margin-top: 115px;
+                width: 600px;
+            }
+            @media screen and (max-width:$mobile){
+                margin-top: 110px;
+                width: 300px;
+            }
+
+            &-pretitle{
+                @media screen and (max-width:$tablet){
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 22px;
+                    margin-bottom: 5px;
+                }
+                @media screen and (max-width:$mobile){
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+
+            &-description {
+                margin-top: 19px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+
+                @media screen and (max-width:$tablet){
+                    font-size: 30px;
+                    line-height: 40px;
+                    letter-spacing: 0.1em;
+                }
+                @media screen and (max-width:$mobile){
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+            }
+
+            &-geo {
+                display: flex;
+                margin-top: 77px;
+                gap: 10px;
+
+                @media screen and (max-width:$desktop-small){
+                    margin-top: 50px;
+                }
+                @media screen and (max-width:$tablet){
+                    justify-content: center;
+                }
+            }
+        }
+    } 
+}
+.commerce {
+    margin-top: 120px;
+    justify-content: flex-end;
+        
+        @media screen and (max-width:$desktop-small){
+            margin-top: 50px;
+        }
+        
+        @media screen and (max-width:$tablet){
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 0;
+        }
+    }
+
+.projects__block-images-rectangle-purple {
+    position: absolute;
+    right: 0px;
+
+    @media screen and (max-width:$desktop-small){
+        display: none;
+    }
+}
+.commerce-centre {
+    @media screen and (max-width:$desktop-small){
+        margin-left: 35px;
+    }
+    @media screen and (max-width:$tablet){
+        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+}

@@ -1,0 +1,33 @@
+.header__nav-item {
+  color: $white-color;
+
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+        + .header__nav-item-label {
+          &:before {
+              content: '';
+              border-radius: 100%;
+              border: 1px solid $white-color;
+              display: inline-block;
+              width: 9px;
+              height: 9px;
+              position: relative;
+              top: 2px;
+              left: 8px;
+              margin-right: 1em; 
+              vertical-align: top;
+              cursor: pointer;
+              text-align: center;
+              transition: all 250ms ease;
+            }
+  }
+  &:checked {
+    + .header__nav-item-label {
+      &:before {
+        background-color: $white-color;
+      }
+    }
+  }
+}
+}

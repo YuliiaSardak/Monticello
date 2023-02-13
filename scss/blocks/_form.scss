@@ -1,0 +1,100 @@
+.form {
+    width: 770px;
+    height: 450px;
+    background: url("../image/background_form.png"), $white-color;
+    position: absolute;
+    top: -300px;
+    left: 420px;
+
+        @media screen and (max-width:$desktop){
+            left: 293px;
+        }
+        @media screen and (max-width:$desktop-small){
+            left: 120px;
+        }
+        @media screen and (max-width:$tablet){
+            width: 675px;
+            left: 45px;
+        }
+        @media screen and (max-width:$mobile){
+            width: 300px;
+            height: auto;
+            left: 10px;
+        }
+
+    &__title {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    &__block {
+        display: flex;
+        margin-top: 42px;
+        justify-content: space-evenly;
+
+            @media screen and (max-width:$tablet){
+                gap: 20px;
+            }
+            @media screen and (max-width:$mobile){
+                flex-direction: column;
+            }
+
+        &-registration {
+            width: 310px;
+        }
+
+        &-info {
+            @media screen and (max-width:$mobile){
+                margin: 0 10px 0 10px;
+            }
+        }
+
+        &-button {
+            text-align: right;
+            
+            @media screen and (max-width:$mobile){
+                width: 300px;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+                &-submit {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    border: 1px solid $main-color;
+                    padding: 12px 34px;
+                    background-color: transparent;
+                    text-align: right;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $hover-color-purple;
+                    }
+                }
+        }
+    }
+}
+.form-row {
+    margin-bottom: 30px ;
+
+        @media screen and (max-width:$mobile){
+            width: 200px;
+            margin: 0 0 30px 40px;
+        }
+
+    & input {
+        display: block;
+        width: 310px;
+        line-height: 38px;
+        background: none;
+        border-width: 0;
+        border-bottom: 1px solid $main-color;
+        transition: all 0.2s ease;
+        font-weight: 400;
+        font-size: 18px;
+
+        @media screen and (max-width:$mobile){
+            width: 200px;
+        }
+    }
+}

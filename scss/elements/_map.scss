@@ -1,0 +1,16 @@
+.map {
+    margin-top: 160px;
+
+    @media screen and (max-width:$mobile){
+        margin-top: 80px;
+    }
+    &__geo {
+        width: 100%;
+        height: 700px;
+
+        @media screen and (max-width:$mobile){
+            height: 500px;
+        }
+    }
+    
+}
