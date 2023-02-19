@@ -1,33 +1,17 @@
 .news__slider-slide {
-    width: 370px;
     height: 514px;
+    padding:0 10px 0 10px;
+
 
     @media screen and (max-width:$tablet){
         height: auto;
     }
-
+    &-text{
+        background-color: $white-color;
+    }
     &-image {
         & img {
-            @media screen and (max-width:$tablet){
-                width: 500px;
-            }
-            @media screen and (max-width:$mobile){
-                width: 250px;
-            }
-        }
-    }
-
-    &-text{
-        height: 274px;
-        background-color: $white-color;
-        width: 370px;
-        
-        @media screen and (max-width:$tablet){
-            width: 500px;
-            height: auto;
-        }
-        @media screen and (max-width:$mobile){
-            width: 250px;
+            width: 100%;
         }
     }
     
@@ -95,6 +79,9 @@
     @media screen and (max-width:$tablet){
         padding: 50px 76px 0 133px;
     }
+    @media screen and (max-width:$mobile-l){
+        padding: 50px 76px 0 62px;
+    }
     @media screen and (max-width:$mobile){
         padding: 50px 25px 0 42px;
     }
@@ -128,6 +115,9 @@
 
     @media screen and (max-width:$desktop){
         left: -40px;
+    }
+    @media screen and (max-width:$mobile-l){
+        left: -2px;
     }
     @media screen and (max-width:$mobile){
         top: 75px;
