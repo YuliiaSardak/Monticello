@@ -1,5 +1,6 @@
 .footer {
     height: 549px;
+    background: url("../image/footer_background.png"), -o-linear-gradient(198.94deg, #7E5AFF -2.19%, #55B7FF 103.21%);
     background: url("../image/footer_background.png"), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
     position: relative;
 
@@ -8,13 +9,22 @@
     }
 
     &__block {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding-top: 203px;
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
 
         @media screen and (max-width:$mobile-l){
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             gap: 40px;
 
         }
@@ -28,6 +38,8 @@
         }
 
         &-social {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             gap: 20px;
         }

@@ -34,15 +34,22 @@
     }
 
     &__block {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: 42px;
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
 
             @media screen and (max-width:$tablet){
                 gap: 20px;
             }
             @media screen and (max-width:$mobile-l){
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
             }
 
         &-registration {
@@ -95,6 +102,8 @@
         background: none;
         border-width: 0;
         border-bottom: 1px solid $main-color;
+        -webkit-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
         font-weight: 400;
         font-size: 18px;

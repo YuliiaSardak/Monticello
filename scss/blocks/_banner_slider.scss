@@ -49,30 +49,41 @@
     }
 }
 .simple {
+    background: url("../image/banner_first_slide.png"),-o-linear-gradient(206.57deg, #7E5AFF 16.9%, #55B7FF 83.27%);
     background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
 }
 .fast {
+    background: url("../image/banner_first_slide.png"),-o-linear-gradient(206.57deg, #ffdb5a 16.9%, #55ffcf 83.27%);
     background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #ffdb5a 16.9%, #55ffcf 83.27%);
 }
 .profitable {
+    background: url("../image/banner_first_slide.png"),-o-linear-gradient(206.57deg, #b34628 16.9%, #55ffa1 83.27%);
     background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #b34628 16.9%, #55ffa1 83.27%);
 }
 .good {
+    background: url("../image/banner_first_slide.png"),-o-linear-gradient(206.57deg, #b3a728 16.9%, #ff55b8 83.27%);
     background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #b3a728 16.9%, #ff55b8 83.27%);
 }
 .modern {
+    background: url("../image/banner_first_slide.png"),-o-linear-gradient(206.57deg, #161615 16.9%, #f4e8ef 83.27%);
     background: url("../image/banner_first_slide.png"),linear-gradient(243.43deg, #161615 16.9%, #f4e8ef 83.27%);
 }
 
 .slick-dots {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style: none;
     gap: 40px;
     position: relative;
-    transform: rotate(90deg);
-    left: 747px;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    left: 700px;
     top: -407px;
 
     @media screen and (max-width:$desktop){
@@ -83,7 +94,9 @@
 
     }
     @media screen and (max-width:$tablet){
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
         top: -45px;
         left: 0;
     }
@@ -104,4 +117,3 @@
 .slider .slick-dots li.slick-active button {
     background-color: $white-color;
 }
-

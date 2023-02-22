@@ -36,6 +36,8 @@
     }
 
 &__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 527px;
     gap: 64px;
@@ -181,6 +183,8 @@
             }
 
             &-geo {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 margin-top: 77px;
                 gap: 10px;
@@ -189,7 +193,9 @@
                     margin-top: 50px;
                 }
                 @media screen and (max-width:$tablet){
-                    justify-content: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                 }
             }
         }
@@ -197,15 +203,22 @@
 }
 .commerce {
     margin-top: 120px;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
         
         @media screen and (max-width:$desktop-small){
             margin-top: 50px;
         }
         
         @media screen and (max-width:$tablet){
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column-reverse;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: column-reverse;
+                    flex-direction: column-reverse;
             margin-top: 0;
         }
     }
